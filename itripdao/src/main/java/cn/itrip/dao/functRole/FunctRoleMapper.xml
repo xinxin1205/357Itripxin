@@ -6,8 +6,8 @@
 
     <select id="getFunctRoleById" resultType="cn.itrip.dao.FunctRole" >
         select
-                roleid as roleid,
-                functid as functid
+        roleid as roleid,
+        functid as functid
         from funct_role
         <trim prefix="where" prefixOverrides="and | or">
             <if test="id != null">
